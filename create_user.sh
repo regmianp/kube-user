@@ -2,12 +2,12 @@
 cwd=`pwd`
 
 #Create User and Namespace
-echo "please type username"
+echo "Please type username:"
 read username
 useradd $username
 kubectl create namespace $username
 
-echo "please type $username password"
+echo "Please type password for $username:"
 read password
 
 #setting up password
